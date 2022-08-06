@@ -20,7 +20,6 @@ import Footer from './Components/Footer/Footer';
 // CONTEXTS IMPORT 
 const App = () => {
     /* ********************METHODS********************* */
-
     const getItemsFromLocalStorage = (localStorageIndex) => {
         const localStorageIndexChecker = localStorage.getItem(localStorageIndex);
         const jsonFormater = JSON.parse(localStorageIndexChecker || "[]");
@@ -32,7 +31,6 @@ const App = () => {
         localStorage.setItem(localStorageKey, makeDataToString)
     }
     /* ********************METHODS********************* */
-
     /* ********************STATES********************* */
     const [likedItems, setLikedItems] = useState(getItemsFromLocalStorage('likedItems') || [])
     const [cartItems, setCartItems] = useState(getItemsFromLocalStorage('shoppingCart') || [])
@@ -65,7 +63,6 @@ const App = () => {
     return (
         <>
             <Header
-
                 isFixed={scrollIndicatorWidth > 5 ? true : false}
                 forceUpdate={forceUpdateHeader}
                 cartItemsArray={cartItems}
@@ -74,7 +71,6 @@ const App = () => {
                 setCartItemsArray={setCartItems}
                 setSharedItemsArray={setSharedItems}
                 setLikedItemsArray={setLikedItems}
-
             />
             < Routes >
                 <Route path='/' element={<CartItemsContext.Provider value={cartItems}>
@@ -91,10 +87,7 @@ const App = () => {
                     </CartItemsContextDispacher.Provider>
                 </CartItemsContext.Provider>}>
                 </Route>
-
-
             </Routes >
-
             <Footer />
         </>)
 }

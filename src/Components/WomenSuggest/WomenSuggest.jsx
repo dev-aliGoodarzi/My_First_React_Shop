@@ -56,11 +56,9 @@ const WomenSuggest = () => {
   // STATES
   // Metthods
   const UNIQUE__KEY__MAKER = (itemForLoop) => {
-    const unqiueKey = `${
-      itemForLoop.id
-    } ${date.getDate()} __ -- __ ${date.getMilliseconds()} __ -- __ ${
-      Math.random() * 10000
-    } `;
+    const unqiueKey = `${itemForLoop.id
+      } ${date.getDate()} __ -- __ ${date.getMilliseconds()} __ -- __ ${Math.random() * 10000
+      } `;
     return unqiueKey;
   };
   // Metthods
@@ -164,7 +162,7 @@ const WomenSuggest = () => {
       <div className={styles.womenSuggestItemContainer}>
         {products.map((item) => {
           return (
-            <Fade left>
+            <Fade left key={item.id}>
               <div key={item.id} className={styles.productItem}>
                 <img src={item.image} alt={`${item.name}pic`} />
                 <div className={styles.bottomAboutContent}>
@@ -177,7 +175,6 @@ const WomenSuggest = () => {
                   </p>
                 </div>
                 <div
-                  // to={`/${item.id}`}
                   className={styles.absoluteItemsContainer}
                 >
                   <div className={styles.left}>
@@ -249,7 +246,7 @@ const WomenSuggest = () => {
                             : 0.5
                         }
                         id="test"
-                        onClick={() => {}}
+                        onClick={() => { }}
                       />
                     </div>
                   </div>
@@ -259,8 +256,8 @@ const WomenSuggest = () => {
                   نام کالا : ${item.name}
                   **
                   قیمت : ${item.price
-                    .toString()
-                    .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} 
+                        .toString()
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",")} 
                     تومان
                   `}
                     onClick={() => {

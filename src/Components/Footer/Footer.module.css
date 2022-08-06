@@ -1,8 +1,6 @@
 .footerContainer {
   width: 100%;
-  height: -webkit-max-content;
-  height: -moz-max-content;
-  height: max-content;
+  height: 60vh;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,18 +12,19 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #ffceffa6;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1rem;
+  margin-top: 3rem;
 }
 
 .footerContainer .top {
   width: 70%;
-  height: 20%;
+  height: 18%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,7 +70,7 @@
 
 .footerContainer .bottom {
   width: 70%;
-  height: 80%;
+  height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
