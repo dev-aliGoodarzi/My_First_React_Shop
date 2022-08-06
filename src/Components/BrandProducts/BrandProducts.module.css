@@ -1,0 +1,59 @@
+.brandProductsContainer {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.brandProductsContainer .imagesContainer {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+.brandProductsContainer .imagesContainer .images {
+  width: 7rem;
+  height: 4rem;
+  background-color: #ccc;
+  margin: 0.1rem;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  border-radius: 0.5rem;
+}
+
+.brandProductsContainer .imagesContainer .images:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+/*# sourceMappingURL=BrandProducts.module.css.map */

@@ -1,0 +1,53 @@
+.customPortalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 22, 22, 0.5);
+  z-index: 9999;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.customPortalContainer .portalItems {
+  background-color: #fdfff5;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.customPortalContainer .active {
+  width: 60vw;
+  height: 40vh;
+}
+
+.customPortalContainer .hide {
+  width: 0;
+  height: 0;
+}
+/*# sourceMappingURL=CustomPortal.module.css.map */

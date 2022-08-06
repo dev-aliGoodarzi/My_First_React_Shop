@@ -1,0 +1,59 @@
+.footerContainer {
+  width: 100%;
+  height: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffceffa6;
+  box-sizing: border-box;
+  padding: 1rem;
+  .top {
+    width: 70%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .item {
+      width: calc(100% / 9);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      img {
+        width: 100%;
+        height: 70%;
+      }
+      p {
+        width: max-content;
+        height: max-content;
+      }
+    }
+  }
+  .bottom {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 5vh;
+    .E__Namad,
+    .myShop,
+    .customers,
+    .contents {
+      width: 23%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      a {
+        width: max-content;
+        height: 5vh;
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+.womenContainerMaster {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  .anchor {
+    width: max-content;
+    align-self: flex-end;
+    justify-self: flex-start;
+    text-align: right;
+    display: flex;
+    flex-direction: row-reverse;
+    font : {
+      weight: bold;
+    }
+    .womenIcon {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 1rem;
+      color: purple;
+      font : {
+        size: 1rem;
+      }
+    }
+  }
+  .womenSuggestItemContainer {
+    width: 100%;
+    height: max-content;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-between;
+    .productItem {
+      width: 20rem;
+      height: 22rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 1rem;
+      margin-top: 2vh;
+      background-color: rgba(102, 68, 255, 0.225);
+      transition: all 0.2s ease;
+      position: relative;
+      overflow: hidden;
+      img {
+        width: 90%;
+        height: 80%;
+      }
+      &:hover {
+        transform: scale(1.05);
+        img {
+          background-color: rgba(204, 204, 204, 0.082);
+          filter: blur(0.2rem);
+        }
+      }
+      .bottomAboutContent {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .nameContainer {
+          color: #000;
+          font : {
+            size: 1.2rem;
+          }
+        }
+        .priceContainer {
+          width: 35%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          color: purple;
+          font : {
+            size: 1.1rem;
+          }
+        }
+      }
+
+      .absoluteItemsContainer {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: rgba(204, 204, 204, 0.226);
+        z-index: 5;
+        opacity: 0;
+        transition: all 0.2s ease;
+
+        .left {
+          position: absolute;
+          width: 20%;
+          height: 50%;
+          top: 3%;
+          left: -22%;
+          background-color: #fff;
+          z-index: 6;
+          transition: all 0.2s ease;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          .icons {
+            height: 30%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            svg {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: rgb(177, 19, 177);
+              border-radius: 50%;
+              font : {
+                size: 1.1rem;
+              }
+            }
+          }
+        }
+        .bottomButton {
+          width: 100%;
+          height: 20%;
+          position: absolute;
+          z-index: 6;
+          bottom: -22%;
+          left: 0;
+          transition: all 0.2s ease;
+        }
+        &:hover {
+          opacity: 1;
+          .bottomButton {
+            bottom: 0;
+            overflow: hidden;
+          }
+          .left {
+            left: 3%;
+          }
+        }
+      }
+    }
+  }
+}

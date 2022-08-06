@@ -1,0 +1,248 @@
+.womenContainerMaster {
+  width: 70%;
+  position: relative;
+  left: 15%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.womenContainerMaster .anchor {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  justify-self: flex-start;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-weight: bold;
+}
+
+.womenContainerMaster .anchor .womenIcon {
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 1rem;
+  color: purple;
+  font-size: 1rem;
+}
+
+.womenContainerMaster .womenSuggestItemContainer {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem {
+  width: 20rem;
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 1rem;
+  margin-top: 2vh;
+  background-color: rgba(102, 68, 255, 0.225);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem img {
+  width: 90%;
+  height: 80%;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem:hover img {
+  background-color: rgba(204, 204, 204, 0.082);
+  -webkit-filter: blur(0.2rem);
+          filter: blur(0.2rem);
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .bottomAboutContent {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .bottomAboutContent .nameContainer {
+  color: #000;
+  font-size: 1.2rem;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .bottomAboutContent .priceContainer {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: purple;
+  font-size: 1.1rem;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(204, 204, 204, 0.226);
+  z-index: 5;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer .left {
+  position: absolute;
+  width: 20%;
+  height: 50%;
+  top: 3%;
+  left: -22%;
+  background-color: #fff;
+  z-index: 6;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer .left .icons {
+  height: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer .left .icons svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #b113b1;
+  border-radius: 50%;
+  font-size: 1.1rem;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer .bottomButton {
+  width: 100%;
+  height: 20%;
+  position: absolute;
+  z-index: 6;
+  bottom: -22%;
+  left: 0;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer:hover {
+  opacity: 1;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer:hover .bottomButton {
+  bottom: 0;
+  overflow: hidden;
+}
+
+.womenContainerMaster .womenSuggestItemContainer .productItem .absoluteItemsContainer:hover .left {
+  left: 3%;
+}
+/*# sourceMappingURL=WomenSuggest.module.css.map */

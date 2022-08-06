@@ -1,0 +1,42 @@
+@font-face {
+  font-family: primay__font__iranSans;
+  src: url("./Fonts/Primary-font/irans-sans.ttf");
+}
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font : {
+    family: primay__font__iranSans;
+    size: 1rem;
+  }
+  text  : {
+    decoration: none;
+  }
+}
+body {
+  background: {
+    image: url("/src/Images/bg.jpg");
+    position: center;
+    size: cover;
+    repeat: no-repeat;
+    attachment: fixed;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  a {
+    text : {
+      decoration: none;
+    }
+    color: #000;
+    &:hover,
+    &:active,
+    &:disabled,
+    &:visited {
+      color: #000;
+    }
+  }
+}

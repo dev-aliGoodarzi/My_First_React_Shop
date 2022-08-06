@@ -1,0 +1,34 @@
+.customPortalContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: rgba(26, 22, 22, 0.5);
+  z-index: 9999;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+  .portalItems {
+    background-color: #fdfff5;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.5s ease;
+    box-sizing: border-box;
+    padding: 1rem;
+    overflow: hidden;
+    border-radius: 1rem;
+  }
+  .active {
+    width: 60vw;
+    height: 40vh;
+  }
+  .hide {
+    width: 0;
+    height: 0;
+  }
+}

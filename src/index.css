@@ -1,0 +1,45 @@
+@font-face {
+  font-family: primay__font__iranSans;
+  src: url("./Fonts/Primary-font/irans-sans.ttf");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  border: 0;
+  font-family: primay__font__iranSans;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("/src/Images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body a {
+  text-decoration: none;
+  color: #000;
+}
+
+body a:hover, body a:active, body a:disabled, body a:visited {
+  color: #000;
+}
+/*# sourceMappingURL=index.css.map */

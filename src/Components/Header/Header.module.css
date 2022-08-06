@@ -1,0 +1,382 @@
+.headerContainer {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+.headerContainer .top {
+  width: 100%;
+  height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2rem 1rem;
+}
+
+.headerContainer .top .userItemsContainer {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContainer .top .searchContainer {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContainer .top .searchContainer input {
+  width: 25vw;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: 1px 1px 3px #ccc;
+          box-shadow: 1px 1px 3px #ccc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 0 20px;
+  box-sizing: border-box;
+  caret-color: #64fe;
+}
+
+.headerContainer .top .searchContainer select {
+  width: 10vw;
+  background-color: #fff;
+}
+
+.headerContainer .top .searchContainer select option {
+  background-color: #fff;
+}
+
+.headerContainer .top .searchContainer svg {
+  font-size: 1.3rem;
+}
+
+.headerContainer .top .iconContainer {
+  width: 4%;
+  height: 80%;
+  background-color: #ccc;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.3rem;
+}
+
+.headerContainer .top .iconContainer img {
+  width: 100%;
+  height: 100%;
+}
+
+.headerContainer .bottom {
+  width: 100%;
+  height: 7vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+}
+
+.headerContainer .bottom .shoppingCardItemsContainer {
+  width: 10%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.headerContainer .bottom .shoppingCardItemsContainer .basket,
+.headerContainer .bottom .shoppingCardItemsContainer .liked,
+.headerContainer .bottom .shoppingCardItemsContainer .shared {
+  position: relative;
+}
+
+.headerContainer .bottom .shoppingCardItemsContainer .basket svg,
+.headerContainer .bottom .shoppingCardItemsContainer .liked svg,
+.headerContainer .bottom .shoppingCardItemsContainer .shared svg {
+  font-size: 2rem;
+  color: #000;
+}
+
+.headerContainer .bottom .shoppingCardItemsContainer .basket .absoluteNumber,
+.headerContainer .bottom .shoppingCardItemsContainer .liked .absoluteNumber,
+.headerContainer .bottom .shoppingCardItemsContainer .shared .absoluteNumber {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  position: absolute;
+  z-index: 1;
+  background-color: #64fe;
+  border-radius: 50%;
+  top: 0;
+  left: 0%;
+  cursor: default;
+}
+
+.headerContainer .bottom .navItemsContainer {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerContainer .bottom .navItemsContainer a {
+  margin: 0 1rem;
+}
+
+.headerContainer .bottom .categoriesContainer {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.headerContainer .bottom .categoriesContainer p {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+}
+
+.headerContainer .bottom .categoriesContainer .absoluteMenuItems {
+  width: 60vw;
+  height: 60vh;
+  position: absolute;
+  z-index: 3;
+  top: 3vh;
+  right: 8vw;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  background-color: #f7f7f7;
+  z-index: -999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.headerContainer .shoppingCartItems,
+.headerContainer .likedItems,
+.headerContainer .sharedItems {
+  width: 30vw;
+  height: 90vh;
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
+  z-index: 10;
+  border-radius: 1rem;
+  background-color: rgba(179, 114, 147, 0.9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+  overflow-y: scroll;
+  left: -31vw;
+  padding: 1rem;
+  cursor: default;
+}
+
+.headerContainer .shoppingCartItems .items,
+.headerContainer .likedItems .items,
+.headerContainer .sharedItems .items {
+  width: 90%;
+  height: 10vh;
+  background-color: rgba(0, 0, 128, 0.5);
+  margin: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1rem;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.headerContainer .shoppingCartItems .items .right,
+.headerContainer .likedItems .items .right,
+.headerContainer .sharedItems .items .right {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.headerContainer .shoppingCartItems .items .left,
+.headerContainer .likedItems .items .left,
+.headerContainer .sharedItems .items .left {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.headerContainer .shoppingCartItems .items .left img,
+.headerContainer .likedItems .items .left img,
+.headerContainer .sharedItems .items .left img {
+  width: 100%;
+  height: 100%;
+}
+
+.headerContainer .shoppingCartItems .items:hover,
+.headerContainer .likedItems .items:hover,
+.headerContainer .sharedItems .items:hover {
+  background-color: rgba(0, 0, 128, 0.6);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: #fff !important;
+}
+
+.fixx {
+  margin-top: 0;
+  position: fixed;
+  top: 0;
+  z-index: 500;
+  background-color: rgba(76, 66, 117, 0.933);
+  color: #fff;
+}
+
+.fixx a {
+  color: #fff !important;
+}
+
+.fixx svg {
+  color: #fff !important;
+}
+/*# sourceMappingURL=Header.module.css.map */
