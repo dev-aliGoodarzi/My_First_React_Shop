@@ -90,9 +90,6 @@ const App = () => {
             </Routes >
             <Footer />
         </>)
-}
-
-
-
+};
 
 export default App
